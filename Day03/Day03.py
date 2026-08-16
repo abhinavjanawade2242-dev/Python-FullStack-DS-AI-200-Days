@@ -79,7 +79,7 @@ print(f"\tPercentage:{avg}")
 if m1>=40 and m2>=40 and m3>=40 and m4>=40 and m5>=40 and m6>=40: 
     if avg>=90:
         grade='A'
-    elif avg>80:
+    elif avg>=80:
         grade='B'
     elif avg>=70:
         grade='C'
