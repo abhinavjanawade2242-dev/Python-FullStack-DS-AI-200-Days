@@ -30,9 +30,3 @@ for i in range(1,6):
         print(f"{i}*{j}={i*j}")
     print()
 
-#problem 6 reverse pattern
-for i in range(5,0,-1):
-    for j in range(5):
-        print(i,end=" ")
-    print()
-    i=i-1
