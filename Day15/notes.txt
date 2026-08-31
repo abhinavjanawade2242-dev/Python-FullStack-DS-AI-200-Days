@@ -1,0 +1,3 @@
+Python is easy to learn.
+I am learning python.
+Day 15 is about file handling.

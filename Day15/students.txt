@@ -1,0 +1,16 @@
+Name: Abhinav
+Age: 20
+Course: Data Science
+--------------------
+Name: Amit
+Age: 20
+Course: CSE
+--------------------
+Name: Omi
+Age: 20
+Course: Civil
+--------------------
+Name: Rushi
+Age: 20
+Course: ECE
+--------------------
