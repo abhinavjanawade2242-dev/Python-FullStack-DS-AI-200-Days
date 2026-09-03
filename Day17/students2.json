@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Abhinav",
+        "age": 20,
+        "course": "Data Science"
+    },
+    {
+        "name": "Rahul",
+        "age": 21,
+        "course": "Computer Science"
+    },
+    {
+        "name": "Amit",
+        "age": 22,
+        "course": "Data Science"
+    },
+    {
+        "name": "Rushi",
+        "age": "20",
+        "course": "ECE"
+    }
+]
