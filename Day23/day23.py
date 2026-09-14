@@ -65,3 +65,28 @@ B=np.array([
 ])
 print("A*B:\n",A*B)
 print("A@B:\n",A@B)
+
+
+#Challenge Employee Salary Analyzer
+employees=np.array([
+    [25000,2],
+    [32000,3],
+    [45000,5],
+    [28000,2],
+    [55000,7],
+    [38000,4]
+])
+print("Average Salary:",np.mean(employees[:,0]))
+print("Highest Salary:",np.max(employees[:,0]))
+print("Lowest Salary:",np.min(employees[:,0]))
+print("Average Experience:",np.mean(employees[:,1]))
+print("Employee having salary greater than 40000:\n")
+for sal in employees[:,0]:
+    if sal>42000:
+        print(sal)
+print("Employees with experience greater than 3 years:\n")
+for exp in employees[:,1]:
+    if exp>3:
+        print(exp)
+fin_sal=employees[:,0]+2000
+print("Final Salaries:",fin_sal)
