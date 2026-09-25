@@ -20,3 +20,6 @@ print(df,"\n")
 
 #problem 1 Count students in each department
 print(df["Department"].value_counts(),"\n")
+
+
+#problem 2 count students in each grade
