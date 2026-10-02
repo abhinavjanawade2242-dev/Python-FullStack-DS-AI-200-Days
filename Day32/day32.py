@@ -83,7 +83,7 @@ plt.show()
 
 
 # 5 correlation heatmap
-correlation=df[["Marks","Attendance","Age"]]
+correlation=df[["Marks","Attendance","Age"]].corr()
 sns.heatmap(
     correlation,
     annot=True
