@@ -72,3 +72,39 @@ df["Marks_ZScore"] = zscore(df["Marks"])
 
 print("\nZ-Scores:")
 print(df[["Name", "Marks", "Marks_ZScore"]])
+
+
+# 1 Basic statisctics
+marks=[55,60,65,70,75,80,85,90]
+print("Mean:",np.mean(marks))
+print("Median:",np.median(marks))
+print("Minimum:",min(marks))
+print("Maximum:",max(marks))
+print("Range:",max(marks)-min(marks))
+print("Variance:",np.var(marks))
+print("Standard Deviation:",np.std(marks))
+
+
+# 2 Quartile analysis
+marks = [45, 50, 52, 55, 60, 65, 70, 75, 80, 100]
+Q1=np.percentile(marks,25)
+Q2=np.percentile(marks,50)
+Q3=np.percentile(marks,75)
+IQR=Q3-Q1
+print(f"Q1:{Q1} \nQ2:{Q2} \nQ3:{Q3} \nIQR:{IQR}")
+lower=Q1-1.5*IQR
+upper=Q3+1.5*IQR
+print("Lower bound:",lower)
+print("Upper bound:",upper)
+outlier=[]
+for mark in marks:
+    if mark<lower or mark>upper:
+        outlier.append(mark)
+print("Outlier:",outlier)
+
+
+# 3 Correlation
+study_hours = [1, 2, 3, 4, 5, 6, 7]
+marks = [45, 50, 55, 62, 70, 78, 85]
+correlation=np.corrcoef(study_hours,marks)
+print(correlation)
